@@ -1,0 +1,17 @@
+﻿///////////////////////////////////////////////////////////////////////////////////////////////////
+// App service - for sharing data common across the whole app
+//////////////////////////////////////////////////////////////////////////////////////////////////
+'use strict'
+
+exports.inject = function (app) {
+    app.service('AppSvc', exports.service);
+};
+
+exports.service = function () {
+    var app = this;
+
+    // api variables
+    app.message = "Hello from the app service";
+    
+
+}

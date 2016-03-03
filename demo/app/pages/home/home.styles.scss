@@ -1,0 +1,205 @@
+@import "../../core/_variables.scss";
+
+.homepage {
+    padding: 30px 0;
+
+    .menu, .detail {
+        background-color: #fff;
+        border: 1px solid #c8d5d8;
+        box-shadow: 2px 2px 5px #d1dcde;
+    }
+
+    .menu {
+        .head {
+            background-color: #10445b;
+            color: #fff;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .items {
+            .item {
+                padding: 8px 15px;
+                text-decoration: underline;
+                cursor: pointer;
+                -moz-transition: all 0.5s ease-out;
+                -o-transition: all 0.5s ease-out;
+                -webkit-transition: all 0.5s ease-out;
+                transition: all 0.5s ease-out;
+
+                &:hover {
+                    background-color: #efefef;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+      
+    p.code-bit {
+        background-color: #f9f2f4;
+    }
+
+    .detail {
+        .title {
+            padding: 15px;
+            color: #10445b;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .writeup {
+            padding: 8px 15px 15px 15px;
+
+            .mirror {
+                .title {
+                    font-size: 10px;
+                    padding: 3px 10px 2px 10px;
+                    background-color: #333;
+                    color: #fff;
+                    border-top-left-radius: 3px;
+                    border-top-right-radius: 3px;
+                }
+                .block {
+                    padding: 10px;
+                    border: 1px solid #333;
+                    font-family: Courier New, Courier, monospace;
+                    background-color: #f9f2f4;
+                    border-bottom-left-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                    
+                    .tab {
+                        display: inline-block;
+                        width: 25px;
+                        height: 1px;
+                    }                 
+                }
+            }
+        }
+    }
+
+}
+
+.sample {
+    padding: 15px;
+
+    .card {
+        border: 1px solid #322c7c;
+        border-radius: 2px;
+        background-color: #423c90;
+        box-shadow: 2px 2px 10px #737373;
+        max-width: 400px;
+
+        .top {            
+
+            .photo {
+                display: inline-block;
+                width: 140px;
+                height: 140px;
+                padding: 20px;
+                vertical-align: top;
+
+                .inner {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50px;
+                    background-image: url('../images/megs.jpg');
+                    box-shadow: 2px 2px 5px #322c7c;
+                }
+            }
+
+            .name {
+                display: inline-block;
+                width: calc(100% - 150px);
+                height: 140px;
+                vertical-align: top;
+                padding: 20px 20px 20px 0;
+                color: #fff;
+                font-size: 30px;
+                font-weight: bold;
+
+                .designation {
+                    font-size: 12px;
+                    font-weight: normal;
+                    color: #9E97F7;
+                }
+
+                .quote {
+                    padding-top: 10px;
+                    font-size: 16px;
+                    color: #C7C7C7;
+                    font-style: italic;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    table.responsive {
+        width: 100%;
+
+        tbody {
+            border-bottom: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+
+            &:first-of-type {
+                border-top: 1px solid #ccc;
+            }
+
+            tr.name {
+                background-color: #f75e10;
+                color: #fff;
+                font-weight: bold;
+
+                td {
+                    padding: 2px 8px;
+                }
+            }
+
+            tr.head-top {
+                font-weight: bold;
+
+                td {
+                    padding: 3px 0;
+
+                    &:first-of-type {
+                        padding-left: 8px;
+                    }
+
+                    &.icon {
+                        width: 38px;
+                        cursor: pointer;
+
+                        i.fa-ellipsis-h {
+                            font-size: 30px;
+                            color: #fff;
+                            text-shadow: #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px;
+
+                            &.expanded {
+                                color: #f75e10;
+                            }
+                        }
+                    }
+                }
+            }
+
+            tr.data-top, tr.head-bottom, tr.data-bottom {
+                
+                td {
+                    padding: 0 0 3px 0;
+
+                    &:first-of-type {
+                        padding-left: 8px;
+                    }
+                }
+            }
+
+            tr.head-bottom {
+                font-weight: bold;
+            }
+
+        }
+
+    }
+}

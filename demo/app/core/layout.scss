@@ -1,0 +1,47 @@
+@import "_variables.scss";
+
+@font-face {
+    font-family: 'tghr';
+    src: url('../../fonts/texgyreheros-regular-webfont.eot');
+    src: url('../../fonts/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/texgyreheros-regular-webfont.woff') format('woff'),
+         url('../../fonts/texgyreheros-regular-webfont.ttf') format('truetype'),
+         url('../../fonts/texgyreheros-regular-webfont.svg#texgyreherosregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('../../fonts/Roboto-Light-webfont.eot');
+    src: url('../../fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/Roboto-Light-webfont.woff') format('woff'),
+         url('../../fonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('../../fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    min-width: 320px;
+    //overflow-y: hidden;
+    overflow-x: auto;
+}
+
+body {
+    background-color: #dce8eb;
+    font-family: robotolight, Arial, sans-serif;
+
+    .header {
+        font-family: tghr, Arial, sans-serif;
+        border-bottom: 1px solid #333;
+        font-size: 50px;
+        background-color: #10445b;
+        text-shadow: #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px;
+        color: #fff;
+
+        .title {
+            padding: 20px 0;
+        }
+    }
+}

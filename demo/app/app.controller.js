@@ -1,0 +1,15 @@
+﻿///////////////////////////////////////////////////////////////////////////////////////////////////
+// APP controller - has some basic functionality for the application
+//////////////////////////////////////////////////////////////////////////////////////////////////
+'use strict';
+  
+exports.inject = function (app) {
+    app.controller('AppCtrl', ['AppSvc', exports.controller])
+};
+
+exports.controller = function (AppSvc) {
+
+    var vm = this;
+    vm.app = AppSvc;    
+
+};

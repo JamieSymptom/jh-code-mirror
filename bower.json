@@ -1,0 +1,24 @@
+{
+  "name": "jh-code-mirror",
+  "version": "0.1.0",
+  "authors": [
+    "Jamie Hirst <jamiehirst@live.co.uk>"
+  ],
+  "description": "Code Mirror angular directive",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "fontawesome#~4.5.0",
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "angular-sanitize": "~1.4.7",
+    "google-code-prettify": "~1.0.4"
+  }
+}

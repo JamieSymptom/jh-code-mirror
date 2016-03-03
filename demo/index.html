@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="app" data-ng-controller="AppCtrl as vm">
+<head>
+    <title>CodeMirror Demonstration</title>
+    <link rel="stylesheet" href="assets/libs.css" />
+    <link rel="stylesheet" href="assets/app.css" />
+    <meta name="viewport" content="initial-scale=1.0">    
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="title">Component Library</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main page route view -->
+    <ng-view></ng-view>
+
+    <script src="assets/libs.js"></script>
+    <script src="../dist/jh-code-mirror.min.js"></script>
+    <script src="assets/app.js"></script>
+
+</body>
+</html>

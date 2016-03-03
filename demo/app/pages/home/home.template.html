@@ -1,0 +1,193 @@
+﻿<div class="homepage">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-3">
+                <div class="menu">
+                    <div class="head">Components</div>
+                    <div class="items">
+                        <div class="item" ng-click="vm.example = 1; prettyPrint();">
+                            Example 1
+                        </div>
+                        <div class="item" ng-click="vm.example = 2; prettyPrint();">
+                            Example 2
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-9" ng-if="vm.example === 1">
+
+                <div class="detail">
+                    <div class="title">
+                        Example One
+                    </div>
+                    <!-- Component Sample Code Goes Inside Here  -->
+                    <div class="sample" jh-code-mirror="mirror">
+<div class="card">
+    <div class="top">
+        <div class="photo">
+            <div class="inner"></div>
+        </div>
+        <div class="name">
+            Megatron
+            <div class="designation">DECEPTICON COMMANDER</div>
+            <div class="quote">&ldquo;Peace through tyranny&rdquo;</div>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div class="writeup">
+                        <div class="explanation">
+                            <p>
+                                This is a demonstration of the <b><i>jhCodeMirror</i></b> directive.
+                            </p>
+                            <p>
+                                It can be used to automatically reflect the inner markup of a containing div into a nice markup box.
+                            </p>
+                            <p>
+                                The calling card widget example above is inside a div with the directive applied as an attribute:
+                            </p>
+                            <p class="code-bit">
+                                <code class="prettyprint">
+                                    &lt;div class="sample" jh-code-mirror="mirror"&gt;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- widget code goes inside here --&gt;<br />
+                                    &lt;/div&gt;<br />
+                                </code>
+                            </p>
+                            <p>
+                                The attribute value refers to the markup box element id. This allows multiple mirrored divs on the same page if necessary.
+                                The markup box this refers to is located further down the page and looks like:
+                            </p>
+                            <p class="code-bit">
+                                <code class="prettyprint">
+                                    &lt;div class="mirror" id="mirror"&gt;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="title"&gt;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Markup<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="block"&gt;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;code class="prettyprint"&gt;&lt;/code&gt;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                    &lt;/div&gt;
+                                </code>
+                            </p>
+                            <p>
+                                The code element has the class <i>prettyprint</i> as the demonstration also makes use of Google's
+                                <a href="https://github.com/google/code-prettify" target="_blank">code-prettify</a> script to render the text with
+                                all the contextual colours.
+                            </p>
+                            <p>
+                                The code automatically rendered by this directive and prettified can be seen below:
+                            </p>
+                        </div>
+                        <div class="mirror" id="mirror">
+                            <div class="title">
+                                Markup
+                            </div>
+                            <div class="block">
+                                <code class="prettyprint"></code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-9" ng-if="vm.example === 2">
+
+                <div class="detail">
+                    <div class="title">
+                        Example Two
+                    </div>
+                    <!-- Component Sample Code Goes Inside Here  -->
+                    <div class="sample" jh-code-mirror="mirror-two">
+<table class="responsive">
+    <tbody>
+        <tr class="name">
+            <td colspan="5">Capita plc - Ordinary Shares of 5p</td>
+        </tr>
+        <tr class="head-top">
+            <td>Dividend Date</td>
+            <td>Record Date</td>
+            <td>Method</td>
+            <td>Amount</td>
+            <td class="icon" data-ng-click="vm.row1 = !vm.row1"><i class="fa fa-ellipsis-h" data-ng-class="{ 'expanded': vm.row1 }"></i></td>
+        </tr>
+        <tr class="data-top">
+            <td>7th October 2015</td>
+            <td>14th October 2015</td>
+            <td>Reinvested</td>
+            <td>£232.32</td>
+            <td></td>
+        </tr>
+        <tr class="head-bottom" data-ng-show="vm.row1">
+            <td>Shares Purchased</td>
+            <td>Rate</td>
+            <td>Tax</td>
+            <td>Status</td>
+            <td></td>
+        </tr>
+        <tr class="data-bottom" data-ng-show="vm.row1">
+            <td>234</td>
+            <td>0.22</td>
+            <td>3.56</td>
+            <td>Paid</td>
+            <td></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr class="name">
+            <td colspan="5">Whitbread plc - Special Shares of 0.6p</td>
+        </tr>
+        <tr class="head-top">
+            <td>Dividend Date</td>
+            <td>Record Date</td>
+            <td>Method</td>
+            <td>Amount</td>
+            <td class="icon" data-ng-click="vm.row2 = !vm.row2"><i class="fa fa-ellipsis-h" data-ng-class="{ 'expanded': vm.row2 }"></i></td>
+        </tr>
+        <tr class="data-top">
+            <td>7th October 2015</td>
+            <td>14th October 2015</td>
+            <td>Reinvested</td>
+            <td>£232.32</td>
+            <td></td>
+        </tr>
+        <tr class="head-bottom" data-ng-show="vm.row2">
+            <td>Shares Purchased</td>
+            <td>Rate</td>
+            <td>Tax</td>
+            <td>Status</td>
+            <td></td>
+        </tr>
+        <tr class="data-bottom" data-ng-show="vm.row2">
+            <td>234</td>
+            <td>0.22</td>
+            <td>3.56</td>
+            <td>Paid</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+                    </div>
+                    <div class="writeup">
+                        <div class="explanation">
+                            <p>
+                                This is another demonstration, but of a much longer piece of code which has some interactivity in it.
+                            </p>                            
+                        </div>
+                        <div class="mirror" id="mirror-two">
+                            <div class="title">
+                                Markup
+                            </div>
+                            <div class="block">
+                                <code class="prettyprint"></code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

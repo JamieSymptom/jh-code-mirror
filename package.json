@@ -1,0 +1,29 @@
+{
+  "name": "jh-code-mirror",
+  "description": "Code Mirror angular directive",
+  "version": "0.1.0",
+  "repository": {
+    "type": "Git"
+  },
+  "readme": "CodeMirror",
+  "license": "MIT",
+  "licenses": [{
+    "type": "",
+    "url": ""
+  }],
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-hash-filename": "^1.0.1",
+    "gulp-html-replace": "^1.5.1",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.2.0",
+    "vinyl-source-stream": "^1.1.0",
+    "vinyl-buffer": "^1.0.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-util": "^3.0.6"
+  }
+}
