@@ -19,12 +19,18 @@ exports.directive = function () {
 
             // get the inner html of our source and treat it for display
             var html = element[0].innerHTML;
+            
+            var num = html.indexOf('<');
+            var str = '<br />' + Array(num).join(" ");
+            var myExp = new RegExp(str, 'g');
+            
             html = html.substring(html.indexOf('<'));                   // remove leading whitespace and newlines
-            html = html.substring(0, html.lastIndexOf('>') + 1);        // remove trailing whitespace and newlines
+            html = html.substring(0, html.lastIndexOf('>') + 1);        // remove trailing whitespace and newlines            
             html = html.replace(/</g, '&lt;');                          // escape tag openings
             html = html.replace(/>/g, '&gt;');                          // escape tag closings
             html = html.replace(/(?:\r\n|\r|\n)/g, '<br />');           // replace text newlines with html breaks
-            html = html.replace(/    /g, '<div class="tab"></div>');    // replace sets of 4 spaces with a spacer block to simulate tabs
+            html = html.replace(myExp, '<br />');                       // get rid of common trailing spaces
+            html = html.replace(/    /g, '&nbsp;&nbsp;&nbsp;&nbsp;');    // replace sets of 4 spaces with a spacer block to simulate tabs
             
             // insert the treated text into the <code> block in our chosen div
             var mirror = angular.element(document.querySelector('#' + target));
