@@ -1,22 +1,17 @@
-﻿///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 // HOME page controller
 //////////////////////////////////////////////////////////////////////////////////////////////////
 'use strict';
 
 exports.inject = function (app) {
-    app.controller('HomeCtrl', ['HomeSvc', exports.controller])
+    app.controller('HomeCtrl', [exports.controller])
 };
 
-exports.controller = function (HomeSvc) {
+exports.controller = function () {
 
-    var vm = this;
-    vm.svc = HomeSvc;
+    var vm = this;    
 
     // scope variables
-    vm.example = 1;
-
-    // watches    
-
-    // hoisted functions       
+    vm.example = 1;  
 
 };
