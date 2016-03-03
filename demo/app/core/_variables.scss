@@ -1,42 +1,42 @@
-﻿// Body-wide styles
-$body_background: #f5f5f5;
+// Body-wide styles
+$body_background: #dce8eb;
 $white_colour: #fff;
 $black_colour: #000;
-$dark_text: #767676;
-$generic_border: #ccc;
 
-// Menu colours
-$menu_background: #747474;
-$menu_hint: #5b5b5b;
-$menu_hover: #00a1c1;
+// Header styles
+$header-bottom: #333;
+$header_background: #10445b;
 
-// Placeholder specific
-$placeholder_background: #cbcbcb;
-$placeholder_text: #f5f5f5;
+// General box styles
+$box_border: #c8d5d8;
+$box_background: $white_colour;
+$box_shadow: #d1dcde;
 
-// Primary colours
-$primary_action: #1b5e7f;
-$primary_info: #00a1c1;
-$primary_help: #6773b6;
+// Menu styles
+$menu_head_background: #10445b;
+$menu_head_text: $white_colour;
+$menu_hover: #efefef;
 
-// Toast colours
-$toast_background: #5b5b5b;
-$toast_hint: #5b5b5b;
+// Code snippet styles
+$code_background: #f9f2f4;
 
-// Progress bar
-$progress_done: #ff5800;
-$progress_done_hint: #C76D3E;
+// Component box styles
+$component_title: #10445b;
+$mirror_title_background: #333;
+$mirror_title_text: $white_colour;
 
-// Flow detail
-$button_hover: #237AA5;
-$completed_border: #EAEAEA;
-$completed_shadow: #CCCCCC;
-$completed_success: #41A543;
+// Card Sample styles
+$card_border: #322c7c;
+$card_background: #423c90;
+$card_shadow: #737373;
+$card_photo_shadow: #322c7c;
+$card_name: $white_colour;
+$card_job: #9E97F7;
+$card_quote: #C7C7C7;
 
-// Footer
-$footer_link: #737373;
-$footer_border: #ededed;
-
-// File colours
-$file_pdf: #BB0706;
-$file_word: #2C599D;
+// Table Sample styles
+$table_border: #ccc;
+$table_head_background: #f75e10;
+$table_head_text: $white_colour;
+$table_icon_contracted: $white_colour;
+$table_icon_expanded: #f75e10;

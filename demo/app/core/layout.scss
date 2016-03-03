@@ -1,4 +1,5 @@
 @import "_variables.scss";
+@import "_mixins.scss";
 
 @font-face {
     font-family: 'tghr';
@@ -24,21 +25,20 @@
 
 html {
     min-width: 320px;
-    //overflow-y: hidden;
     overflow-x: auto;
 }
 
 body {
-    background-color: #dce8eb;
+    background-color: $body_background;
     font-family: robotolight, Arial, sans-serif;
 
     .header {
+        @include black-stroke();
         font-family: tghr, Arial, sans-serif;
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid $header-bottom;
         font-size: 50px;
-        background-color: #10445b;
-        text-shadow: #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px;
-        color: #fff;
+        background-color: $header_background;        
+        color: $white_colour;
 
         .title {
             padding: 20px 0;

@@ -1,18 +1,19 @@
 @import "../../core/_variables.scss";
+@import "../../core/_mixins.scss";
 
 .homepage {
     padding: 30px 0;
 
     .menu, .detail {
-        background-color: #fff;
-        border: 1px solid #c8d5d8;
-        box-shadow: 2px 2px 5px #d1dcde;
+        background-color: $box_background;
+        border: 1px solid $box_border;
+        box-shadow: 2px 2px 5px $box_shadow;
     }
 
     .menu {
         .head {
-            background-color: #10445b;
-            color: #fff;
+            background-color: $menu_head_background;
+            color: $menu_head_text;
             padding: 15px;
             font-weight: bold;
             font-size: 18px;
@@ -29,7 +30,7 @@
                 transition: all 0.5s ease-out;
 
                 &:hover {
-                    background-color: #efefef;
+                    background-color: $menu_hover;
                     font-weight: bold;
                 }
             }
@@ -37,13 +38,13 @@
     }
       
     p.code-bit {
-        background-color: #f9f2f4;
+        background-color: $code_background;
     }
 
     .detail {
         .title {
             padding: 15px;
-            color: #10445b;
+            color: $component_title;
             font-size: 25px;
             font-weight: bold;
         }
@@ -55,16 +56,16 @@
                 .title {
                     font-size: 10px;
                     padding: 3px 10px 2px 10px;
-                    background-color: #333;
-                    color: #fff;
+                    background-color: $mirror_title_background;
+                    color: $mirror_title_text;
                     border-top-left-radius: 3px;
                     border-top-right-radius: 3px;
                 }
                 .block {
                     padding: 10px;
-                    border: 1px solid #333;
+                    border: 1px solid $mirror_title_background;
                     font-family: Courier New, Courier, monospace;
-                    background-color: #f9f2f4;
+                    background-color: $code_background;
                     border-bottom-left-radius: 3px;
                     border-bottom-right-radius: 3px;
                     
@@ -84,10 +85,10 @@
     padding: 15px;
 
     .card {
-        border: 1px solid #322c7c;
+        border: 1px solid $card_border;
         border-radius: 2px;
-        background-color: #423c90;
-        box-shadow: 2px 2px 10px #737373;
+        background-color: $card_background;
+        box-shadow: 2px 2px 10px $card_shadow;
         max-width: 400px;
 
         .top {            
@@ -103,8 +104,8 @@
                     width: 100px;
                     height: 100px;
                     border-radius: 50px;
-                    background-image: url('../images/megs.jpg');
-                    box-shadow: 2px 2px 5px #322c7c;
+                    background-image: url('../../../images/megs.jpg');
+                    box-shadow: 2px 2px 5px $card_photo_shadow;
                 }
             }
 
@@ -114,20 +115,20 @@
                 height: 140px;
                 vertical-align: top;
                 padding: 20px 20px 20px 0;
-                color: #fff;
+                color: $card_name;
                 font-size: 30px;
                 font-weight: bold;
 
                 .designation {
                     font-size: 12px;
                     font-weight: normal;
-                    color: #9E97F7;
+                    color: $card_job;
                 }
 
                 .quote {
                     padding-top: 10px;
                     font-size: 16px;
-                    color: #C7C7C7;
+                    color: $card_quote;
                     font-style: italic;
                     font-weight: bold;
                 }
@@ -139,17 +140,17 @@
         width: 100%;
 
         tbody {
-            border-bottom: 1px solid #ccc;
-            border-right: 1px solid #ccc;
-            border-left: 1px solid #ccc;
+            border-bottom: 1px solid $table_border;
+            border-right: 1px solid $table_border;
+            border-left: 1px solid $table_border;
 
             &:first-of-type {
-                border-top: 1px solid #ccc;
+                border-top: 1px solid $table_border;
             }
 
             tr.name {
-                background-color: #f75e10;
-                color: #fff;
+                background-color: $table_head_background;
+                color: $table_head_text;
                 font-weight: bold;
 
                 td {
@@ -172,12 +173,12 @@
                         cursor: pointer;
 
                         i.fa-ellipsis-h {
+                            @include black-stroke();
                             font-size: 30px;
-                            color: #fff;
-                            text-shadow: #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px, #000000 0 0 1px;
+                            color: $table_icon_contracted;                            
 
                             &.expanded {
-                                color: #f75e10;
+                                color: $table_icon_expanded;
                             }
                         }
                     }

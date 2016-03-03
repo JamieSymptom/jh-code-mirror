@@ -1,7 +1,12 @@
-﻿@mixin cover-parent() {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+@import "_variables.scss";
+
+@mixin black-stroke() {
+    text-shadow: $black_colour 0 0 1px, 
+                 $black_colour 0 0 1px, 
+                 $black_colour 0 0 1px, 
+                 $black_colour 0 0 1px, 
+                 $black_colour 0 0 1px, 
+                 $black_colour 0 0 1px, 
+                 $black_colour 0 0 1px, 
+                 $black_colour 0 0 1px;
 }
